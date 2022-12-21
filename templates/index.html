@@ -21,14 +21,18 @@
   <body>
     <div class="container">
       <h1>pdf x</h1>
-      <form>
+      <form method="post" action="/merge" enctype="multipart/form-data">
         <div class="form-group">
-          <label for="exampleFormControlFile1">Example file input</label>
+          <label for="exampleFormControlFile1"
+            >Select the pdf file tou want to Merge</label
+          >
           <input
             type="file"
             class="form-control-file"
             id="exampleFormControlFile1"
+            accept=".pdf"
           />
+          <input class="btn btn-primary my-4" type="submit" value="submit" />
         </div>
       </form>
     </div>
